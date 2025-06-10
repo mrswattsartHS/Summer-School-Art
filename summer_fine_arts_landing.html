@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summer Fine Arts Landing Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, #fdf6e3, #f2f2f2);
+      padding: 20px;
+      margin: 0;
+    }
+    header {
+      background: url('https://www.transparenttextures.com/patterns/fancy-deboss.png'), linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .tab-nav button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #6a11cb;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tab-nav button.active {
+      background-color: #2575fc;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    section {
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border: 2px solid #ddd;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .warning {
+      background: #ffefef url('https://www.transparenttextures.com/patterns/bedge-grunge.png');
+      padding: 15px;
+      border-left: 6px solid #cc0000;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .icon {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ART010: Summer Fine Arts Studio</h1>
+    <p>Accelerated Level 2 Yearlong Course in 5 Weeks</p>
+  </header>
+
+  <div class="tab-nav">
+    <button class="tablink active" onclick="openTab(event, 'syllabus')">Syllabus</button>
+    <button class="tablink" onclick="openTab(event, 'warnings')">Warnings</button>
+    <button class="tablink" onclick="openTab(event, 'about')">About</button>
+    <button class="tablink" onclick="openTab(event, 'structure')">Structure</button>
+    <button class="tablink" onclick="openTab(event, 'live')">Live Classes</button>
+    <button class="tablink" onclick="openTab(event, 'routine')">Routine</button>
+    <button class="tablink" onclick="openTab(event, 'grading')">Grading</button>
+    <button class="tablink" onclick="openTab(event, 'help')">Help</button>
+  </div>
+
+  <div id="syllabus" class="tab-content active">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Syllabus Icon" class="icon">
+      <h2>📌 Course Syllabus</h2>
+      <p>This course includes detailed instructions, rubrics, and expectations. Access this in your learning platform.</p>
+    </section>
+  </div>
+
+  <div id="warnings" class="tab-content">
+    <section>
+      <div class="warning">
+        📌 <strong>Studio-Based Course:</strong> All assignments must be completed by hand. Digital submissions will receive a grade of 0.
+      </div>
+      <div class="warning">
+        🎨 <strong>Supplies Required:</strong> Bring your own: paints, brushes, clay/playdough, crayons, markers, pencils, paper, coloring tools.
+      </div>
+      <div class="warning">
+        🎥 <strong>Webcam Policy:</strong> On-camera presence is required daily. Use a phone or alternate device if necessary.
+      </div>
+    </section>
+  </div>
+
+  <div id="about" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/3465/3465441.png" alt="About Icon" class="icon">
+      <h2>🧑‍🎨 About the Course</h2>
+      <p>This intensive, fast-paced art course is for highly motivated 11th and 12th graders. It blends art history, analysis, and studio work in a 5-week schedule.</p>
+      <ul>
+        <li>📚 Prerequisite: Level 1 Art / Foundations of Art</li>
+        <li>🧠 Knowledge Required: Elements of Art, Principles of Design, Feldman’s Analysis</li>
+        <li>⏱️ Expect 2+ hours of work per day</li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="structure" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/1584/1584897.png" alt="Structure Icon" class="icon">
+      <h2>🗓️ Course Structure</h2>
+      <ul>
+        <li>✍️ 2 TDA (Text-Dependent Analysis) Writing Assignments</li>
+        <li>🎨 1 Major Studio Project</li>
+        <li>📷 Daily On-Camera Progress Check-Ins</li>
+        <li>🧪 Weekly Summative Assessments</li>
+        <li>✅ Daily Reading Checks (retakes allowed)</li>
+      </ul>
+      <p><strong>⚠️ Note:</strong> Weekly units close permanently after the deadline.</p>
+    </section>
+  </div>
+
+  <div id="live" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/3936/3936650.png" alt="Live Icon" class="icon">
+      <h2>🎥 Live Class Expectations</h2>
+      <ul>
+        <li>🎓 Attend all live sessions</li>
+        <li>📸 Be on camera, ready to share and discuss</li>
+        <li>🖼️ Bring work-in-progress for group feedback</li>
+        <li>🕒 Use in-class time productively</li>
+        <li>🙋‍♀️ Stay engaged even if you fall behind</li>
+      </ul>
+      <p><a href="https://docs.google.com/document/d/1cfFUTnoXzRT2d7cWrSnrd06i8q6mIGs0r3qB2T5glss/edit?usp=sharing" target="_blank">📑 Review the Webcam Policy</a></p>
+    </section>
+  </div>
+
+  <div id="routine" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Routine Icon" class="icon">
+      <h2>📅 Daily Routine</h2>
+      <ul>
+        <li>🗣️ Check announcements</li>
+        <li>📝 Review daily plan</li>
+        <li>🎯 Complete assigned work</li>
+        <li>📬 Check gradebook for feedback</li>
+        <li>🤝 Join and participate in live sessions</li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="grading" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Grading Icon" class="icon">
+      <h2>📊 Grading & Policies</h2>
+      <ul>
+        <li>🚫 Late work not accepted after unit closure</li>
+        <li>📆 Request extensions before due dates</li>
+        <li>🔍 Plagiarism = 0 grade and disciplinary action</li>
+        <li>🖌️ All artwork must be original and handmade</li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="help" class="tab-content">
+    <section>
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Help Icon" class="icon">
+      <h2>❓ Questions or Help?</h2>
+      <p>Contact Mrs. Watts via email, phone, or during class sessions. I’m here to help you succeed!</p>
+    </section>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      const tabContents = document.querySelectorAll('.tab-content');
+      const tabButtons = document.querySelectorAll('.tablink');
+
+      tabContents.forEach((tab) => tab.classList.remove('active'));
+      tabButtons.forEach((btn) => btn.classList.remove('active'));
+
+      document.getElementById(tabName).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
