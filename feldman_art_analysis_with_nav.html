@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feldman's 4 Steps of Art Analysis</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .step {
+      background-color: #fff;
+      border-left: 6px solid #3498db;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .step h2 {
+      margin: 0;
+      color: #2980b9;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .resources {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .resources a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="feldman_art_analysis_with_nav.html">Feldman's Art Analysis</a>
+  </nav>
+
+  <header>
+    <h1>Feldman's 4 Steps of Art Analysis</h1>
+    <p>Explore and interact with the structured approach to understanding art</p>
+  </header>
+
+  <div class="step" onclick="toggleContent(this)">
+    <h2>1. Description</h2>
+    <div class="content">
+      <p>What do you see? Describe the artwork without interpretation. Focus on the facts: subject matter, medium, size, colors, shapes, and techniques used.</p>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(this)">
+    <h2>2. Analysis</h2>
+    <div class="content">
+      <p>How is the artwork organized? Examine the elements of art and principles of design. Look at composition, balance, contrast, rhythm, and focal points.</p>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(this)">
+    <h2>3. Interpretation</h2>
+    <div class="content">
+      <p>What is the meaning or message? Consider the mood, symbolism, and context. What do you think the artist is trying to communicate?</p>
+    </div>
+  </div>
+
+  <div class="step" onclick="toggleContent(this)">
+    <h2>4. Judgment</h2>
+    <div class="content">
+      <p>Do you think the artwork is successful? Justify your opinion based on the previous steps. Consider its originality, emotional impact, and craftsmanship.</p>
+    </div>
+  </div>
+
+  <div class="resources">
+    <h2>Interactive Learning</h2>
+    <p>Practice with these flashcards:</p>
+    <iframe src="https://quizlet.com/320998058/flashcards/embed?i=1x9v3q&x=1jj1" title="Quizlet Flashcards"></iframe>
+
+    <h2>Further Reading</h2>
+    <ul>
+      <li><a href="https://www.gisd.org/departments/fine-arts/feldman-model-for-art-criticism" target="_blank">Galveston ISD: Feldman's Model Overview</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Art Analysis Guide | Based on Feldman's Model</p>
+  </footer>
+
+  <script>
+    function toggleContent(element) {
+      const content = element.querySelector('.content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
